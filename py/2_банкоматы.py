@@ -10,7 +10,7 @@ def calcLen(atm_s, len_btwn_atm_s, new_atm_s):
 
     # общую сумму делим количество расстояний 
     x = sumLens / new_lens
-    print(x)
+
     for i in len_btwn_atm_s:
         # количество банкоматов-соседей для новых банкоматов
         atmN = math.trunc(i / x)
