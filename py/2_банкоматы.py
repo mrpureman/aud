@@ -23,15 +23,11 @@ def calcLen(atm_s, len_btwn_atm_s, new_atm_s):
 
     return new_optimal_lens
 
-
-
-
 def main():
     atm_s = 5
     len_btwn_atm_s = [100, 30, 20, 80] 
 
     new_atm_s = 3
     print(calcLen(atm_s, len_btwn_atm_s, new_atm_s))
-   
-
+  
 main()
