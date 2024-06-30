@@ -36,8 +36,23 @@ def getMaxNum(listOfNums):
     return "".join(map(str, listOfNums))
 
 def main():
-    #nums = ['41', '4', '005' , '89'] #, '05', '67', '004']
-    nums = ['03', '25', '1' , '07'] #, '05', '67', '004']
+    nums = ['41', '4', '005' , '89'] #, '05', '67', '004']
+    #nums = ['03', '25', '1' , '07'] #, '05', '67', '004']
+    
     print(getMaxNum(nums))
+
+
+"""    from internet 
+    sz = sum(map(len, nums))  # длина сцепленного числа
+    dp = [('', nums)] * (sz + 1)  # буфер для динамического программирования
+    for i, (head, tail) in enumerate(dp):
+        for s in tail:
+            head_s, j = head + s, i + len(s)
+            if j <= sz and dp[j][0] < head_s:
+                new_tail = tail[:]
+                new_tail.remove(s)
+                dp[j] = (head_s, new_tail)
+    print(dp[sz][0])
+    """
 
 main()
